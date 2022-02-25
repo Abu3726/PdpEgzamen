@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/viewFragment1">
+
+    <fragment
+        android:id="@+id/viewFragment1"
+        android:name="com.conamobile.egzamen.ViewFragment1"
+        android:label="fragment_view1"
+        tools:layout="@layout/fragment_view1" >
+        <action
+            android:id="@+id/action_viewFragment1_to_viewFragment2"
+            app:destination="@id/viewFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewFragment2"
+        android:name="com.conamobile.egzamen.ViewFragment2"
+        android:label="fragment_view2"
+        tools:layout="@layout/fragment_view2" >
+        <action
+            android:id="@+id/action_viewFragment2_to_viewFragment3"
+            app:destination="@id/viewFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewFragment3"
+        android:name="com.conamobile.egzamen.ViewFragment3"
+        android:label="fragment_view3"
+        tools:layout="@layout/fragment_view3" >
+        <action
+            android:id="@+id/action_viewFragment3_to_viewFragment4"
+            app:destination="@id/viewFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewFragment4"
+        android:name="com.conamobile.egzamen.ViewFragment4"
+        android:label="fragment_view4"
+        tools:layout="@layout/fragment_view4" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.conamobile.egzamen.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_collectionsFragment"
+            app:destination="@id/collectionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/collectionsFragment"
+        android:name="com.conamobile.egzamen.CollectionsFragment"
+        android:label="fragment_collections"
+        tools:layout="@layout/fragment_collections" >
+        <action
+            android:id="@+id/action_collectionsFragment_to_messageFragment"
+            app:destination="@id/messageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.conamobile.egzamen.MessageFragment"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" >
+        <action
+            android:id="@+id/action_messageFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.conamobile.egzamen.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+</navigation>
